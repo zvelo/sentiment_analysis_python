@@ -1,3 +1,5 @@
+#!/usr/bin/python -u
+
 import re, math, collections, itertools, os
 import nltk, nltk.classify.util, nltk.metrics
 from nltk.classify import NaiveBayesClassifier
