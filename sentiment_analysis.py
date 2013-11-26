@@ -93,3 +93,10 @@ def sentiment(phrase):
 word_scores = create_word_scores()
 best_words = find_best_words(word_scores, 15000)
 evaluate_features(best_word_features)
+
+while True:
+    try:
+        line = raw_input();
+    except EOFError:
+        break
+    print sentiment(line)
